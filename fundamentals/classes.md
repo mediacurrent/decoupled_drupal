@@ -28,20 +28,47 @@ A child of an ES6 class is another _type_ definition which extends the parent wi
 Let's look at classes.
 
 ```javascript
-class ClassicalGreeting {
-  constructor(greeting = "Hello", name = "World") {
-    this.greeting = greeting
-    this.name = name
-  }
-
-  greet() {
-    return `${this.greeting}, ${this.name}!`
-  }
+// Initializing a constructor function
+function HorseRider(name, bibColor) {
+    this.name = name;
+    this.bibColor = bibColor;
 }
 
-const classyGreeting = new ClassicalGreeting("Hey", "folks")
+// How this looks as a class.
+class HorseRider {
+    constructor(name, bibColor) {
+        this.name = name;
+        this.bibColor = bibColor;
+    }
+}
+```
 
-console.log(classyGreeting.greet())
+When we worked on constructor functions we added methods to the prototype. With classes you can added them directly to the class.
+
+```javascript
+// Initializing a constructor function
+function HorseRider(name, bibColor) {
+    this.name = name;
+    this.bibColor = bibColor;
+}
+
+// Add a method to the constructor function.
+HorseRider.prototype.summary = function() {
+ return `${this.name} wears a ${this.bibColor} bib`;
+}
+
+// How this looks as a class.
+class HorseRider {
+    constructor(name, bibColor) {
+        this.name = name;
+        this.bibColor = bibColor;
+    }
+    
+    // Add a method to the class.
+    summary() {
+        return `${this.name} wears a ${this.bibColor} bib`;
+    }
+}
 ```
 
 {% hint style="info" %}
