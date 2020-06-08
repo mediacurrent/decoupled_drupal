@@ -44,8 +44,8 @@ We can use a constructor function:
 
 ```javascript
 function race(type, location, climate) {
-  this.type = make;
-  this.location = model;
+  this.type = type;
+  this.location = location;
   this.climate = climate;
 }
 
@@ -111,8 +111,6 @@ function aboveSeaLevel(seaLevel, altitude) {
   
 let myRace = new race('flat', 'florida', 'hot and humid');
 
-aboveSeaLevel(0, 400);
-
-myRace.aboveSeaLevel(0, 200);
+myRace.aboveSeaLevel(0, 200); // 200
 ```
 
