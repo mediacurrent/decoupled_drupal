@@ -92,7 +92,11 @@ Functions are programs that perform a particular task, they are executed when ca
 Objects are different from other types, which can be considered ‘primitives’ \(string, number, boolean, symbol, null and undefined\)  as they contain only one thing. Objects can contain collections of data.
 
 ```javascript
-var horse = {name:"Trigger", legs:4, color:"black"};
+var horse = {
+  name: "Trigger",
+  legs: 4,
+  color: "black"
+};
 ```
 
 
