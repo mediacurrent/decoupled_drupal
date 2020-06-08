@@ -25,7 +25,7 @@ The most important difference between classes and prototype-based inheritance is
 
 A child of an ES6 class is another _type_ definition which extends the parent with new properties and methods, which in turn can be **instantiated at runtime**. A child of a prototype is another object _instance_ which delegates to the parent any properties that aren’t implemented on the child.
 
-Let's look at classes.
+Let's look at classes vs constructor functions.
 
 ```javascript
 // Initializing a constructor function
@@ -106,7 +106,7 @@ function jockeyInRace(name, racesEntered, racesWon, bibColor, homeTown) {
 }
 ```
 
-Here you can see the .call function is using the properties for the parent in the child, and adding its variances. With classes, we can achieve the same thing like this:
+Here you can see the .call\(\) function is using the properties for the parent in the child, and adding its variances. With classes, we can achieve the same thing like this:
 
 ```javascript
 // Creating a new class from the parent
