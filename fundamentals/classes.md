@@ -123,15 +123,11 @@ class HorseRidden extends HorseRider  {
 const newHorse = new HorseRidden('Last Man Standing', 'orange', 'gray');
 ```
 
-The extends keyword is used to create a new class, that is a child of another class. So here, HorseRidden is a child of HorseRide. 
+The `extends` keyword is used to create a new class, that is a child of another class. So here, **HorseRidden** is a child of **HorseRide**.  They keyword `super` is used to access the functions of the parent, so here name and bibColor. 
 
 {% hint style="info" %}
 [https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)
 {% endhint %}
 
-### super
 
-### constructor
-
-### extends
 
