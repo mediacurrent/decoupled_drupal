@@ -98,18 +98,21 @@ We can also add a function and make that a method on the object:
 
 ```javascript
 function race(type, location, climate) {
-  this.type = make;
-  this.location = model;
+  this.type = type;
+  this.location = location;
   this.climate = climate;
-  this.aboveSealevel = aboveSeaLevel;
+  this.aboveSeaLevel = aboveSeaLevel;
 }
 
-  // One method definition technique
-  function aboveSeaLevel(sealevel, altitude) {
-      return this.altitude - this.sealevel;
-    };
+// One method definition technique
+function aboveSeaLevel(seaLevel, altitude) {
+    console.log(altitude - seaLevel);
+ };
   
-var myRace = new race('flat', 'florida', 'hot and humid');
-myRace.aboveSeaLevel(0, 400);
+let myRace = new race('flat', 'florida', 'hot and humid');
+
+aboveSeaLevel(0, 400);
+
+myRace.aboveSeaLevel(0, 200);
 ```
 
