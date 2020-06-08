@@ -54,13 +54,68 @@ let newRaceTypes = raceTypes.slice();
 Arrays are zero indexed. This means that the first item in the array has an index of 0.
 
 ```javascript
-let horses = ['tony', 'lenny', 'henry', 'jessica', 'sharon', 'pete davidson']
+let horses = ['tony', 'lenny', 'henry', 'jessica', 'sharon', 'pete davidson'];
 
 // First item:
 horses[0]; // tony
 //Last item:
 horses[horses.length -1]; // pete davidson
-//Note that is is a syntax error:
+//Note that is is a syntax error as dot notation cannot be used:
 horses.0;
 ```
+
+### Map
+
+Map is a way to iterate over an array. Map creates a new array that avoids mutation. In the below example you can see how we take an array of winnings represented as integers and pass them through a function, and then map the results to a new array. We have also preserved the original array.
+
+```javascript
+let tonyTheHorseWinnings = [100, 1000, 200, 5, 4000];
+
+let convertToCanadianDollars = item => item*2;
+
+let tonyTheHorseWinningsCanadian = tonyTheHorseWinnings.map(convertToCanadianDollars);
+ //[200, 2000, 400, 10, 8000]
+```
+
+Map is popular in React for rendering lists.
+
+```javascript
+
+const horses = ['tony', 'lenny', 'henry', 'jessica', 'sharon', 'pete davidson'];
+
+const horseList = () => (
+  <div>
+    <ul>{horses.map(horse => <li key={horse}> {horse} </li>)}</ul>
+  </div>
+);
+
+```
+
+This works if we want to render the entire array, but sometimes we only need a part of it. This is where filter comes in.
+
+### Filter
+
+If we have an array of race winners, and the amount of wins they have, we can filter that data to get different subsets. So if we want to only know about winners who have won more than 10 races we might do this:
+
+```javascript
+const winners = [
+  {
+    name: "lloyd",
+    wins: 9
+  },
+  {
+    name: "andrew",
+    wins: 12
+  },
+  {
+    name: "susan",
+    wins: 16
+  },
+];
+
+const overTen = winners.filter( champs => champs.wins > 9 );
+//{ name: "andrew", wins: 12 }, { name: "susan", wins: 16 }
+```
+
+
 

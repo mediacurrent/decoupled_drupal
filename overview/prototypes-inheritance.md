@@ -25,6 +25,7 @@ console.log(horse2.racesWon); //undefined
 In the above example, we establish a horseInRace function that contains some default values.  We then create horse1 and assign it some new values, we update the name and give the horse a value for the races won.  When we create horse2 and try to find out its value for racesWon it is undefined. This is where prototypes allow us to update all of the instances of horseInRace.
 
 ```javascript
+// A constructor function
 function horseInRace() {
   this.name = 'Andrew the fast';
   this.racesEntered = 7;
