@@ -71,6 +71,60 @@ class HorseRider {
 }
 ```
 
+Using our class:
+
+```javascript
+class HorseRider {
+    constructor(name, bibColor) {
+        this.name = name;
+        this.bibColor = bibColor;
+    }
+    
+    // Add a method to the class.
+    summary() {
+        return `${this.name} wears a ${this.bibColor} bib`;
+    }
+}
+
+const newRider = new HorseRider('Andrew', 'red');
+
+// This has this as it's prototype: 
+// __proto__:
+//  constructor: class HorseRider
+//  summary: ƒ summary()
+```
+
+The above shows that the functions were applied to the prototype, which is a little less syntax than the constructor function approach.
+
+In our prototype inheritance section, we created a child  based on a parent:
+
+```javascript
+function jockeyInRace(name, racesEntered, racesWon, bibColor, homeTown) {
+  horseInRace.call(this, name, racesEntered, racesWon);
+  this.bibColor = bibColor;
+  this.homeTown = homeTown;
+}
+```
+
+Here you can see the .call function is using the properties for the parent in the child, and adding its variances. With classes, we can achieve the same thing like this:
+
+```javascript
+// Creating a new class from the parent
+class HorseRidden extends HorseRider  {
+    constructor(name, bibColor, color) {
+        // Chain constructor with super
+        super(name, bibColor);
+
+        // Add a new property
+        this.color = color;
+    }
+}
+
+const newHorse = new HorseRidden('Last Man Standing', 'orange', 'gray');
+```
+
+The extends keyword is used to create a new class, that is a child of another class. So here, HorseRidden is a child of HorseRide. 
+
 {% hint style="info" %}
 [https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)
 {% endhint %}
