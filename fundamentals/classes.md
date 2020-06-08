@@ -87,7 +87,7 @@ class HorseRider {
 }
 
 const newRider = new HorseRider('Andrew', 'red');
-
+// Will return Andrew wears a red bib
 // This has this as it's prototype: 
 // __proto__:
 //  constructor: class HorseRider
