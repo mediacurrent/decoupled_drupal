@@ -4,7 +4,7 @@
 
 ## JavaScript
 
-* [OVERVIEW](javascript/overview/intro.md)
+* [Overview](javascript/overview/overview.md)
   * [Types / Data Types](javascript/overview/types-data-types.md)
   * [Scope](javascript/overview/scope.md)
   * [Variables](javascript/overview/variables.md)
