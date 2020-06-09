@@ -49,9 +49,38 @@ You can see that the action that occurs when resolve occurs happens in the then 
    })
 ```
 
-We can 
+We can chain items togethers like this, where our then's occur in order once each completes:
 
-### .then\(\) Chains
+```javascript
+let horseChecking = new Promise(function(resolve, reject) {
+  const horseName = 'Juanita';
+  const horseNameOnPassport = 'Juanita';
+ 
+  setTimeout(function(){ 
+    if(horseName  === horseNameOnPassport) {
+      resolve();
+    } else {
+      reject();
+    }
+  }, 3000);
+});
+ 
+horseChecking
+  .then(function () { 
+    console.log('They Matched!');
+   })
+  .then(function () { 
+    console.log('They Still Matched!');
+   })
+  .then(function () { 
+    console.log('They Stilllllllll Matched!');
+   })
+  .catch(function () {
+    console.log('An error occured');
+  });
+```
 
-### async/await
+### 
+
+async/await gives us a different syntax for dealing with promises
 
