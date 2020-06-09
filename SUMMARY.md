@@ -9,11 +9,11 @@
 ## Overview
 
 * [What is JavaScript?](javascript/overview/intro.md)
-* [Types / Data Types](javascript/overview/types-data-types.md)
-* [Scope](javascript/overview/scope.md)
-* [Variables](javascript/overview/variables.md)
-* [Booleans](javascript/overview/booleans.md)
-* [Prototypes / Inheritance](javascript/overview/prototypes-inheritance.md)
+  * [Types / Data Types](javascript/overview/types-data-types.md)
+  * [Scope](javascript/overview/scope.md)
+  * [Variables](javascript/overview/variables.md)
+  * [Booleans](javascript/overview/booleans.md)
+  * [Prototypes / Inheritance](javascript/overview/prototypes-inheritance.md)
 
 ## Fundamentals
 
