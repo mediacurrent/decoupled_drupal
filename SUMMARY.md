@@ -4,31 +4,31 @@
 
 ## JavaScript
 
-  * [JavaScript](javascript/README.md)
+* [JavaScript](javascript/README.md)
 
-  ## Overview
+## Overview
 
-  * [What is JavaScript?](javascript/overview/intro.md)
-  * [Types / Data Types](javascript/overview/types-data-types.md)
-  * [Scope](javascript/overview/scope.md)
-  * [Variables](javascript/overview/variables.md)
-  * [Booleans](javascript/overview/booleans.md)
-  * [Prototypes / Inheritance](javascript/overview/prototypes-inheritance.md)
+* [What is JavaScript?](javascript/overview/intro.md)
+* [Types / Data Types](javascript/overview/types-data-types.md)
+* [Scope](javascript/overview/scope.md)
+* [Variables](javascript/overview/variables.md)
+* [Booleans](javascript/overview/booleans.md)
+* [Prototypes / Inheritance](javascript/overview/prototypes-inheritance.md)
 
-  ## Fundamentals
+## Fundamentals
 
-  * [Objects](javascript/fundamentals/objects.md)
-  * [Functions](javascript/fundamentals/functions.md)
-  * [Arrays](javascript/fundamentals/arrays.md)
-  * [Classes](javascript/fundamentals/classes.md)
+* [Objects](javascript/fundamentals/objects.md)
+* [Functions](javascript/fundamentals/functions.md)
+* [Arrays](javascript/fundamentals/arrays.md)
+* [Classes](javascript/fundamentals/classes.md)
 
-  ## Deeper Dive
+## Deeper Dive
 
-  * [Destructuring](javascript/deeper-dive/destructuring.md)
-  * [Spread Operator](javascript/deeper-dive/spread-operator.md)
-  * [Promises](javascript/deeper-dive/promises.md)
-  * [Modules](javascript/deeper-dive/modules.md)
-  * [npm](javascript/deeper-dive/npm.md)
+* [Destructuring](javascript/deeper-dive/destructuring.md)
+* [Spread Operator](javascript/deeper-dive/spread-operator.md)
+* [Promises](javascript/deeper-dive/promises.md)
+* [Modules](javascript/deeper-dive/modules.md)
+* [npm](javascript/deeper-dive/npm.md)
 
 ## Gatsby
 
