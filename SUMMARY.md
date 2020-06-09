@@ -11,12 +11,11 @@
   * [Booleans](javascript/overview/booleans.md)
   * [Prototypes / Inheritance](javascript/overview/prototypes-inheritance.md)
 
-## Fundamentals
 
-* [Objects](javascript/fundamentals/objects.md)
-* [Functions](javascript/fundamentals/functions.md)
-* [Arrays](javascript/fundamentals/arrays.md)
-* [Classes](javascript/fundamentals/classes.md)
+* [Fundamentals](javascript/fundamentals/objects.md)
+  * [Functions](javascript/fundamentals/functions.md)
+  * [Arrays](javascript/fundamentals/arrays.md)
+  * [Classes](javascript/fundamentals/classes.md)
 
 ## Deeper Dive
 

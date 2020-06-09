@@ -1,6 +1,8 @@
-# Objects
+# Fundamentals
 
-As discussed in the [types](../overview/types-data-types.md#object) section, objects are entities with properties that define their characteristics. 
+## Objects
+
+As discussed in the [types](../overview/types-data-types.md#object) section, objects are entities with properties that define their characteristics.
 
 ```javascript
 let horse = {
@@ -91,7 +93,7 @@ let horse = {
   };
 
 console.log(horse.raceWinPercentage(5, 4)); //80
-  
+
 ```
 
 We can also add a function and make that a method on the object:
@@ -108,9 +110,8 @@ function race(type, location, climate) {
 function aboveSeaLevel(seaLevel, altitude) {
     console.log(altitude - seaLevel);
  };
-  
+
 let myRace = new race('flat', 'florida', 'hot and humid');
 
 myRace.aboveSeaLevel(0, 200); // 200
 ```
-
