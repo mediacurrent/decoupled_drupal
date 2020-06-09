@@ -1,14 +1,10 @@
 # Table of contents
 
-* [JavaScript Fundamentals](README.md)
+* [Welcome](README.md)
 
 ## JavaScript
 
-* [JavaScript](javascript/README.md)
-
-## Overview
-
-* [What is JavaScript?](javascript/overview/intro.md)
+* [OVERVIEW](javascript/overview/intro.md)
   * [Types / Data Types](javascript/overview/types-data-types.md)
   * [Scope](javascript/overview/scope.md)
   * [Variables](javascript/overview/variables.md)
