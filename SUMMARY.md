@@ -26,3 +26,11 @@
 * [Modules](deeper-dive/modules.md)
 * [npm](deeper-dive/npm.md)
 
+## JavaScript
+
+* [JavaScript](javascript/javascript.md)
+
+## Gatsby
+
+* [Gatsby](gatsby/gatsby.md)
+
