@@ -82,5 +82,37 @@ horseChecking
 
 ### 
 
-async/await gives us a different syntax for dealing with promises
+Async/await gives us a different syntax for dealing with promises.  The async keyword is a promise based behavior. You can see below that when we declared our promise above, we had to declare the resolve, the async return is the resolve so below we return true vs. `return Promise.resplve(true)`  so we are avoiding the need to explicitly configure promise chains.
+
+```javascript
+async function aysnc1() {
+  setTimeout(function(){ 
+    //return Promise.resolve(true);
+    return true;
+  }, 3000);
+
+}
+
+aysnc1().then(console.log('done!')); // done
+```
+
+The wait keyword makes JavaScript wait until that promise settles and returns its result.
+
+```javascript
+// wait ms milliseconds
+function wait(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
+async function hello( time, message) {
+  try {
+      await wait(time);
+      console.log(message);
+    } catch(err) {
+      alert(err); // TypeError: failed to fetch
+  }
+}
+
+hello(500, 'one');
+```
 
