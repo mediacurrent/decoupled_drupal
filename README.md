@@ -4,7 +4,7 @@ description: >-
   of your framework.
 ---
 
-# JavaScript Fundamentals
+# Welcome
 
 This training will cover an array of vanilla Javascript concepts that are valuable on their own, but also help you confidently get the most out of front-end libraries like React.
 

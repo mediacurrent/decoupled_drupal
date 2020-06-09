@@ -1,4 +1,4 @@
-# Components structure
+# Project structure
 
 * All of the components created in this training will be housed under the **src/components** directory. Each will have it’s own `index.js` and `styles.module.scss` file.
 * The `index.js` files for the components will be where we use [JSX](https://reactjs.org/docs/introducing-jsx.html) for the markup as well any javascript we may need. 
@@ -12,20 +12,16 @@ gatsby
 ├── node_modules
 ├── public
 └── src
-    ├── components
-    │   └── Container
-    │       ├── index.js
-    │       ├── styles.module.scss
-    ├── global
-    ├── pages
-    ├── templates
+    ├── components
+    │   └── Container
+    │       ├── index.js
+    │       ├── styles.module.scss
+    ├── global
+    ├── pages
+    ├── templates
 ```
 
 {% hint style="info" %}
 Read more about Components in React/Gatsby: [https://www.gatsbyjs.org/docs/building-with-components/](https://www.gatsbyjs.org/docs/building-with-components/)
 {% endhint %}
-
-
-
-
 

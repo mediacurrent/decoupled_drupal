@@ -1,2 +1,2 @@
-# Responsive images\(intro\)
+# Responsive images
 

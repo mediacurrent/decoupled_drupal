@@ -1,6 +1,6 @@
 # Creating a template
 
-Remember the `slug` context variable we passed in in **gatsby-node**?  That's the `$slug` we are querying with here!
+Remember the `slug` context variable we passed in in **gatsby-node**? That's the `$slug` we are querying with here!
 
 ```graphql
 export const query = graphql`

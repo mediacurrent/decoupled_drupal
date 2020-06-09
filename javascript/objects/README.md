@@ -93,7 +93,6 @@ let horse = {
   };
 
 console.log(horse.raceWinPercentage(5, 4)); //80
-
 ```
 
 We can also add a function and make that a method on the object:
@@ -115,3 +114,4 @@ let myRace = new race('flat', 'florida', 'hot and humid');
 
 myRace.aboveSeaLevel(0, 200); // 200
 ```
+

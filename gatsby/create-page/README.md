@@ -1,4 +1,4 @@
-# Creating pages
+# Creating page
 
 Creating pages in Gatsby can be done in three ways:
 
@@ -6,15 +6,15 @@ Creating pages in Gatsby can be done in three ways:
 * Using the **createPages** function
 * Using a plugin's **createPages** function
 
-### Static Page creation
+## Static Page creation
 
 This is the simplest. You can explicitly define pages by giving them their own `myPage.js` file inside **src/pages**. Gatsby automatically looks in this directory and takes whatever React components you have in each page, runs their GraphQL queries, marries them together and outputs a single static page.
 
-#### Creating our site's Index page
+### Creating our site's Index page
 
 If we look in our folder structure, we have a `src/pages/` directory. Let’s add an `index.js` file there and see what happens. We add our markup, and Gatsby picks it up automatically, knows `index` means it’s the homepage, and now we see it. Easy! But how do we get our data on to the page? Let’s look at Gatsby’s idea for that.
 
-#### Page queries
+### Page queries
 
 Gatsby has a concept of ‘page queries’. This means you structure a GraphQL query in a certain way that Gatsby knows you want to query this data at build time, not in the browser. Remember, GraphQL queries certainly can be made in the browser, but our special Gatsby GraphQL server only exists during our build time. So this type of query can only exist in **page** or **template** files. I didn’t show this aspect on the `index.js` page template, but it functions in the same way. To create one, at the bottom of the file we would put something like this:
 

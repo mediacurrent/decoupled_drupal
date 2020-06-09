@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
      }
    }
  `);
- 
+
  // We then map over each movie in the array.
  result.data.movies.edges.forEach(({ node }) => {
    // Now we call the createPage helper function and pass it
@@ -44,7 +44,6 @@ exports.createPages = async ({ graphql, actions }) => {
    });
  });
 };
-
 ```
 
 This is really cool! We could make 1000s of pages this way. This is the most common way that pages are made in Gatsby. But we aren’t querying enough data to make our page have content. How does the page get all the data it needs? Here, we are just querying enough to get an ‘id’ type field for each movie. We need to look in the `movie.js`.

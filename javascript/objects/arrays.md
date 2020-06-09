@@ -1,6 +1,6 @@
 # Arrays
 
-Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time. Arrays can not use strings as indexes, as seen in our [objects](untitled.md) section, but must use integers :
+Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time. Arrays can not use strings as indexes, as seen in our [objects]() section, but must use integers :
 
 ```javascript
 let horse = [
