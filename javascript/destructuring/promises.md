@@ -41,6 +41,16 @@ horseChecking
   });
 ```
 
+You can see that the action that occurs when resolve occurs happens in the then section
+
+```javascript
+  .then(function () { 
+    console.log('They Matched!');
+   })
+```
+
+We can 
+
 ### .then\(\) Chains
 
 ### async/await
