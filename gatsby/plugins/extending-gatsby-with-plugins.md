@@ -1,0 +1,2 @@
+# Extending Gatsby with plugins
+
