@@ -4,6 +4,8 @@
 
 ### Object/Array Combining
 
+Array ands objects can be cloned with the spread operator.
+
 ```javascript
 let winnersRace1 = [ 'Jerry', 'Paul III', 'Harry' ];
 
