@@ -1,6 +1,18 @@
 # Spread Operator
 
-### =
+We can use something called the spread operator to make some of coding tasks easier. For example, if we want to pass in a set of parameters, rather than redefine them in the function call we can do this:
+
+```javascript
+function jockeyFacts (name, currentHorse, favFood) {
+  console.log(name);// Humberto Milan
+  console.log(currentHorse); // Fast Freddie
+  console.log(favFood) // Cakes
+}
+
+let jockey1 = ['Humberto Milan', 'Fast Freddie', 'Cakes']
+
+jockeyFacts(...jockey1);
+```
 
 Arrays and objects can be combined using the spread operator.
 
