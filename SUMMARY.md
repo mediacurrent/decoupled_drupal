@@ -17,13 +17,12 @@
   * [Arrays](javascript/fundamentals/arrays.md)
   * [Classes](javascript/fundamentals/classes.md)
 
-## Deeper Dive
 
-* [Destructuring](javascript/deeper-dive/destructuring.md)
-* [Spread Operator](javascript/deeper-dive/spread-operator.md)
-* [Promises](javascript/deeper-dive/promises.md)
-* [Modules](javascript/deeper-dive/modules.md)
-* [npm](javascript/deeper-dive/npm.md)
+* [Deeper Dive](javascript/deeper-dive/destructuring.md)
+  * [Spread Operator](javascript/deeper-dive/spread-operator.md)
+  * [Promises](javascript/deeper-dive/promises.md)
+  * [Modules](javascript/deeper-dive/modules.md)
+  * [npm](javascript/deeper-dive/npm.md)
 
 ## Gatsby
 
