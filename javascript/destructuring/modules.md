@@ -7,22 +7,42 @@ Modules can be loaded into each other and give access to the functionality withi
 ```javascript
 // nameJockey.js
 
-export function nameJockey( name ) {
+function nameJockey( name ) {
   return `This jockey is named ${name}`
 }
+
+let tremendous = true;
+
+export { nameJockey, tremendous }
 ```
 
 ```javascript
 // otherFile.js
 // Loaded by path relative to location of otherFile.js
-import {nameJockey} from './nameJockey.js';
+import {nameJockey, tremendous} from './nameJockey.js';
 
 nameJockey('Gerald McJockey'); // Gerald McJockey
 ```
 
-### import/export
+There are two types of exports, named and default. You can have multiple named exports per module but only one default.
 
-### default
+```javascript
+// named exports
 
-### named
+function nameJockey( name ) {
+  return `This jockey is named ${name}`
+}
+
+let tremendous = true;
+
+export { nameJockey, tremendous }
+
+// default exports
+
+export default function nameJockey( name ) {
+  return `This jockey is named ${name}`
+}
+
+
+```
 

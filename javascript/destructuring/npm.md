@@ -1,8 +1,23 @@
 # npm
 
-### What is a package?
+[NPM](https://docs.npmjs.com/) stands for node package manager. And like it says, it is a package manager for node.
 
-### What is a dependency?
+A **package** is a file or directory that is added via the package.json file. When the install command is run, the corresponding package is added to the node\_modules folder. Our package.json manages what packages get installed, and ensures that the correct versions and dependencies are downloaded.
 
-### What is a dev dependency? 
+Some packages that we need will have a dependency which means, to work they rely on code that lives in another package. To ensure that you never run into a situation where you forget or don't know to load a dependency they are defined in the packages own package.json file and are downloaded when you download the package you need. 
+
+We can also declare dev dependencies, these are packages that we need to develop the site, for example you might be using a scss compiler such as  gulp or a testing framework. This is useful for us as developers but would not be needed for site deployment. In this case we declare this as dev dependencies so they are not included in a production build. Reviewing the package.json file, you should see the different declarations.
+
+```javascript
+"name": "my_package",
+"version": "1.0.0",
+"dependencies": {
+  "my_dep": "^1.0.0",
+  "another_dep": "~2.2.0"
+},
+"devDependencies" : {
+  "my_test_framework": "^3.1.0".
+  "another_dev_dep": "1.0.0 - 1.2.0"
+}
+```
 
