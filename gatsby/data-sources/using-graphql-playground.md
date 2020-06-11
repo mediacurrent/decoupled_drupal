@@ -8,7 +8,7 @@ With GraphiQL you can run queries to see the data from the Drupal site that Gats
 
 Here’s a query you can run to get the title, body, and some other fields for all of the movie content type nodes in Drupal:
 
-```text
+```graphql
 query MyQuery {
   allNodeMovie {
     edges {
