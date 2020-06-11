@@ -6,19 +6,19 @@ Conversely you could merge `horse, andrew jackson, onions` but not the number se
 
 The type of a value determines the operations and methods that are allowed to be called on it. These are the types in JavaScript**:**
 
-### Data Types
+#### Data Types
 
-#### number
+**number**
 
 The number type represents integers and floating point numbers \(floats\), so 42 or 41.95.
 
 There are also special numeric values that are part of the number type: Infinity and NaN.  NaN is the result of computational error usually when an operation is incorrectly applied.  For example, if you tried to divide a string with a number 
 
 ```javascript
-console.log (“horse” / 42); //result: nan
+console.log ('horse' / 42); //result: nan
 ```
 
-#### **string**
+**string**
 
 A string is surrounded by quotes. There are two types of quotes, simple and extended functionality. Simple quotes are either single or double quotes. There is no functional difference.  
 
@@ -33,15 +33,16 @@ console.log(`animal type is ${animal}`) // animal type is horse.
 
 In this case animal variables become part of the string.
 
-#### **bigInt**
+**bigInt**
 
-This type allows us to represent whole numbers larger than 253 - 1, which is the largest number that Javascript can reliably represent.
+This type allows us to represent whole numbers larger than 9007199254740991, which is the largest number that Javascript can reliably represent.
 
 A BigInt is created by adding n to the end of an integer or by calling the function BigInt\(\).
 
 _Currently BigInt is not supported in Safari and IE._
 
-####  **boolean**
+  
+**boolean**
 
 The boolean type has two reserved words: `true` and `false`. Booleans are used for their comparison operations == \(is equal to\), &gt; \(greater than\), &lt; \(less than\) etc. 
 
@@ -64,7 +65,7 @@ Any other value can be considered truthy, including:
 * \[\] and empty array
 * {} and empty object
 
-#### undefined
+**undefined**
 
 Undefined indicates that the value is not assigned. Example:
 

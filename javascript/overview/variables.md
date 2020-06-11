@@ -21,27 +21,34 @@ Scope defines where the variables are accessible within the script. Variables ar
 
 ```javascript
 function planRace () { 
+  // local / function scope
   var eventLocation = 'My Race Track';
   return eventLocation;
 }
 
+// back to global scope
+
 console.log(eventLocation) //  Reference Error 
 ```
 
-Accessing the eventLocation variable outside of the planRace function returns a reference error because it is only scoped to the function.
+Accessing the `eventLocation` variable outside of the `planRace` function returns a reference error because it is only scoped to the function.
 
 If we were to extend that function, we can see how block scoping, works with in functions.
 
 ```javascript
 function planRace (locations) { 
   var eventLocation = [];
+  // local / function scope
   console.log(newLocation); // undefined
 
   for(var i = 0; i < locations.length; i ++) {
+  // new locations is in a block, so is know to the function scope, but
+  // is undefined until here.
    var newLocation = locations[i];
    eventLocation.push(newLocation);  
   }
   
+  // Still part of the local / function scope
   console.log(i); // 2
   console.log(newLocation); // Kentucky
   return eventLocation;
@@ -58,9 +65,13 @@ One of the key differences between the `var` keyword and the `let` keyword is th
 
 ```javascript
 function planRace (locations) { 
+  // local / function scope
   let eventLocation = [];
   
+  console.log(newLocation); // Reference Error: newLocation is not defined
+
   for(let i =0; i < locations.length; i ++) {
+  // blocks scope
    let newLocation = locations[i];
    eventLocation.push(newLocation);  
   }
@@ -88,7 +99,7 @@ const horseName = 'chucky';
 horseName = 'cedric'; //Uncaught SyntaxError: Identifier 'horseName' has already been declared 
 ```
 
-When an object is defined with Const, its properties can be updated or mutated, which is an important distinction.
+When an object is defined with const, its properties can be updated or mutated, which is an important distinction.
 
 ```javascript
 const horseStats = {
