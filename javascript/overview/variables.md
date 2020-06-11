@@ -57,7 +57,19 @@ function planRace (locations) {
 planRace(['My house', 'Kentucky']);
 ```
 
-Here you can see that with in the function , newLocation is undefined and not a reference error because of how vars are treated by the function scoping. Within the function block the newLocation and i variables are accessible when defined with the `var` keyword.
+Here you can see that with in the function , newLocation is undefined and not a reference error because of how vars are treated by the function scoping \(this is called hoisting\). Within the function block the newLocation and i variables are accessible when defined with the `var` keyword.
+
+When we use the word 'hoisting' we mean that javascript has moved the variable declaration to the top of the scope silently, or 'hoist'ed it. The above to javascript looks like: 
+
+```javascript
+function planRace (locations) { 
+  var eventLocation = [];
+  var newLocation;
+  var i;
+  ...
+```
+
+If we are using strict mode, hoisting will not work, so variables called before they are defined will return a reference error vs. undefined. We will also see how functions are affected by hoisting in the functions section.
 
 ### Let
 
