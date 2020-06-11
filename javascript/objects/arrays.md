@@ -1,6 +1,6 @@
 # Arrays
 
-Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time. Arrays can not use strings as indexes, as seen in our [objects]() section, but must use integers :
+Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time. Arrays use integers as keys not strings :
 
 ```javascript
 let horse = [
@@ -17,7 +17,7 @@ let raceTypes = [ 'flat', 'jump', 'harness', 'saddle trot', 'endurance' ];
 // Get length
 console.log(raceTypes.length); // 5;
 
-// Get last item.
+// Get last item
 let lastType = raceTypes[raceTypes.length -1]
 
 console.log(lastType); //endurance
@@ -69,8 +69,10 @@ horses.0;
 Map is a way to iterate over an array. Map creates a new array that avoids mutation. In the below example you can see how we take an array of winnings represented as integers and pass them through a function, and then map the results to a new array. We have also preserved the original array.
 
 ```javascript
+// Our array
 let tonyTheHorseWinnings = [100, 1000, 200, 5, 4000];
 
+// A function we want to apply to our array.
 let convertToCanadianDollars = item => item*2;
 
 let tonyTheHorseWinningsCanadian = tonyTheHorseWinnings.map(convertToCanadianDollars);

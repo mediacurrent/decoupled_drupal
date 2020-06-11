@@ -1,6 +1,6 @@
 # Prototypes / Inheritance
 
-When functions are created, javascript adds a prototype property. This prototype object is shared across all instances of the function. This means that if we use the prototype object we can update our function of all instances it is used.
+When functions are created, javascript adds a prototype property. This prototype object is shared across all instances of the function. This means that if we use the prototype object we can update our function for future use.
 
 ```javascript
 function horseInRace() {
@@ -84,6 +84,7 @@ function horseInRace(name, racesEntered, racesWon) {
   this.racesWon = racesWon;
 }
 
+//Methods are added to prototypes separately.
 horseInRace.prototype.winPercent = function() {
   console.log(this.name + ' has won '+ (this.racesWon / this.racesEntered) *100 +'% of their races');
 };
@@ -151,4 +152,20 @@ let steve = new jockeyInRace( 'Steve', 7, 7, 'Red', 'Orange Park');
 console.log( steve ); // homeTown: "Orange Park", name: "Steve", racesEntered: 7, racesWon: 7, winPercent: function () { console.log(this.name + ' has won ' + this.racesWon / this.racesEntered * 100 + '% of their races');
 steve.winPercent(); // "Steve has won 100% of their races"
 ```
+
+The above console.log\(steve\) outputs:
+
+```javascript
+jockeyInRace
+bibColor: "Red"
+homeTown: "Orange Park"
+name: "Steve"
+racesEntered: 7
+racesWon: 7
+__proto__: horseInRace
+constructor: ƒ jockeyInRace(name, racesEntered, racesWon, bibColor, homeTown)
+__proto__: Object
+```
+
+So we can see that the prototype is the horseInRace, giving us access to the methods of that prototype, but the constructor is the jockeyInRace. 
 
