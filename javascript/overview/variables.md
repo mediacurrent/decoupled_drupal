@@ -57,9 +57,9 @@ function planRace (locations) {
 planRace(['My house', 'Kentucky']);
 ```
 
-Here you can see that with in the function , newLocation is undefined and not a reference error because of how vars are treated by the function scoping \(this is called hoisting\). Within the function block the newLocation and i variables are accessible when defined with the `var` keyword.
+Here you can see that with in the function , newLocation is undefined and not a reference error because of how vars are treated by the function scoping \(this is called **hoisting**\). Within the function block the newLocation and i variables are accessible when defined with the `var` keyword.
 
-When we use the word 'hoisting' we mean that javascript has moved the variable declaration to the top of the scope silently, or 'hoist'ed it. The above to javascript looks like: 
+When we use the word '**hoisting**' we mean that javascript has moved the variable declaration to the top of the scope silently, or '**hoisted**' it. The above to javascript looks like: 
 
 ```javascript
 function planRace (locations) { 
@@ -69,7 +69,7 @@ function planRace (locations) {
   ...
 ```
 
-If we are using strict mode, hoisting will not work, so variables called before they are defined will return a reference error vs. undefined. We will also see how functions are affected by hoisting in the functions section.
+If we are using strict mode, hoisting will not work, so variables called before they are defined will return a reference error vs. undefined. We will also see how functions are affected by hoisting in the [functions](../objects/functions.md) section.
 
 ### Let
 
@@ -100,7 +100,7 @@ Now we are unable to access i outside of the block it is declared in, because `l
 
 ### Const
 
-Const and let share the same block scoping behavior. The difference is that you can't reassign its value.
+Const and let share the same block scoping behavior. The difference between that you can't reassign its value once it is set.
 
 ```javascript
 let horseName = 'andrew';
@@ -111,7 +111,7 @@ const horseName = 'chucky';
 horseName = 'cedric'; //Uncaught SyntaxError: Identifier 'horseName' has already been declared 
 ```
 
-When an object is defined with const, its properties can be updated or mutated, which is an important distinction.
+Sometimes you will see that const is referred to as immutable which isn't always the case. When an object is defined with const, its properties can be updated or mutated, which is an important distinction.
 
 ```javascript
 const horseStats = {

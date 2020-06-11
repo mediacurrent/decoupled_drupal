@@ -2,7 +2,7 @@
 
 There are a few ways to define functions. 
 
-#### _**Function Declaration**_ ****
+#### **Function Declaration** 
 
 This defines a named function. 
 
@@ -12,7 +12,7 @@ function nameOfFunction(parameters){
 }
 ```
 
-This method 'hoists' the function, allowing it to be called before it is defined. 
+This method 'hoists' the function, allowing it to be called before it is defined.  As with variables, the function defined this way, is moved silently by javascript to the top of its scope.
 
 ```javascript
 nameOfHorse('Stephen');
@@ -22,7 +22,7 @@ function nameOfHorse(name) {
 }
 ```
 
-#### _**Function Expression**_ 
+#### **Function Expression** 
 
 Defines either a named or anonymous function. Above we defined a named function `nameOfHorse`. An anonymous function is a function that has no name. Function expressions are not hoisted and can not be called before they are defined. 
 
