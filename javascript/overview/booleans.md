@@ -1,6 +1,6 @@
 # Booleans
 
-We discussed booleans earlier as part of [types](types-data-types.md#boolean). Booleans evaluate as either `true` or `false`, but in javascript there are things that can be considered true or false outside of the keywords `true` and `false`. These values are called truthy and falsy.
+We discussed booleans earlier as part of [types](types-data-types.md#boolean). Booleans evaluate as either `true` or `false`, but in javascript there are things that can be considered true or false outside of the keywords `true` and `false`. These values are called **truthy** and **falsy**.
 
 These values are always falsy: 
 
@@ -49,8 +49,8 @@ console.log( '5' == 5); // true
 Above we see that it will evaluate a string with a number, which are different types. We should want to make sure that we are comparing types, which is where **Strict Equality**, or `===` is used.
 
 ```javascript
-console.log( 5 == 5 ); // true
-console.log( '5' == 5); // false
+console.log( 5 === 5 ); // true
+console.log( '5' === 5); // false
 ```
 
 Strict equality will not return true for different types. This is also true of non equality checkers.
