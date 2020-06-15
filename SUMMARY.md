@@ -42,7 +42,6 @@
   * [Intro to Getting runtime data from APIs \(useEffect or useQuery\)](gatsby/data-sources/getting-data-from-apis.md)
 * [Creating page](gatsby/create-page/README.md)
   * [createPages function](gatsby/create-page/explain-create-page-function.md)
-  * [Build the movie detail page](gatsby/create-page/build-movie-detail-page.md)
   * [Creating a template](gatsby/create-page/creating-a-template.md)
   * [Plugin createPages](gatsby/create-page/plugin-createpages.md)
   * [Gatsby Link](gatsby/create-page/gatsby-link.md)

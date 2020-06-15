@@ -14,15 +14,15 @@ A promise is an object which can be returned synchronously from this asynchronou
 * **Rejected**
 * **Pending**
 
-A promise is **settled** if it’s not pending \(it has been resolved or rejected\). Once settled, a promise can not be resettled. Calling `resolve()` or `reject()` again will have no effect because promise is immutable. 
+A promise is **settled** if it’s not pending \(it has been resolved or rejected\). Once settled, a promise can not be resettled. Calling `resolve()` or `reject()` again will have no effect because promise is immutable.
 
-Below we have defined a promise and used a settimeout to simulate waiting on results. We are doing a basic comparison on two values, and either resolving or rejecting based on the result.  
+Below we have defined a promise and used a settimeout to simulate waiting on results. We are doing a basic comparison on two values, and either resolving or rejecting based on the result.
 
 ```javascript
 let horseChecking = new Promise(function(resolve, reject) {
   const horseName = 'Juanita';
   const horseNameOnPassport = 'Juanita';
- 
+
   setTimeout(function() { 
     if(horseName  === horseNameOnPassport) {
       resolve();
@@ -31,7 +31,7 @@ let horseChecking = new Promise(function(resolve, reject) {
     }
   }, 3000);
 });
- 
+
 horseChecking
   .then(function () { 
     console.log('They Matched!');
@@ -55,7 +55,7 @@ We can chain items togethers like this, where our then's occur in order once eac
 let horseChecking = new Promise(function(resolve, reject) {
   const horseName = 'Juanita';
   const horseNameOnPassport = 'Juanita';
- 
+
   setTimeout(function(){ 
     if(horseName  === horseNameOnPassport) {
       resolve();
@@ -64,7 +64,7 @@ let horseChecking = new Promise(function(resolve, reject) {
     }
   }, 3000);
 });
- 
+
 horseChecking
   .then(function () { 
     console.log('They Matched!');
@@ -80,9 +80,7 @@ horseChecking
   });
 ```
 
-### 
-
-Async/await gives us a different syntax for dealing with promises.  The async keyword is a promise based behavior. You can see below that when we declared our promise above, we had to declare the resolve, the async return is the resolve so below we return true vs. `return Promise.resolve(true)`  so we are avoiding the need to explicitly configure promise chains.
+Async/await gives us a different syntax for dealing with promises. The async keyword is a promise based behavior. You can see below that when we declared our promise above, we had to declare the resolve, the async return is the resolve so below we return true vs. `return Promise.resolve(true)` so we are avoiding the need to explicitly configure promise chains.
 
 ```javascript
 async function aysnc1() {

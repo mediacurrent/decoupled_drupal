@@ -2,7 +2,7 @@
 
 Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time.
 
-### Operator examples:
+## Operator examples:
 
 ```javascript
 let raceTypes = [ 'flat', 'jump', 'harness', 'saddle trot', 'endurance' ];
@@ -42,7 +42,7 @@ raceTypes.splice(1,1); // 'flat', 'harness', 'saddle trot', 'endurance'
 let newRaceTypes = raceTypes.slice();
 ```
 
-### Accessing Arrays
+## Accessing Arrays
 
 Arrays are zero indexed. This means that the first item in the array has an index of 0.
 
@@ -57,7 +57,7 @@ horses[horses.length -1]; // pete davidson
 horses.0;
 ```
 
-### Map
+## Map
 
 Map is a way to iterate over an array. Map creates a new array that avoids mutation. In the below example you can see how we take an array of winnings represented as integers and pass them through a function, and then map the results to a new array. We have also preserved the original array.
 
@@ -75,7 +75,6 @@ let tonyTheHorseWinningsCanadian = tonyTheHorseWinnings.map(convertToCanadianDol
 Map is popular in React for rendering lists.
 
 ```javascript
-
 const horses = ['tony', 'lenny', 'henry', 'jessica', 'sharon', 'pete davidson'];
 
 const horseList = () => (
@@ -83,12 +82,11 @@ const horseList = () => (
     <ul>{horses.map(horse => <li key={horse}> {horse} </li>)}</ul>
   </div>
 );
-
 ```
 
 This works if we want to render the entire array, but sometimes we only need a part of it. This is where filter comes in.
 
-### Filter
+## Filter
 
 If we have an array of race winners, and the amount of wins they have, we can filter that data to get different subsets. So if we want to only know about winners who have won more than 10 races we might do this:
 
@@ -111,6 +109,4 @@ const winners = [
 const overTen = winners.filter( champs => champs.wins > 9 );
 //{ name: "andrew", wins: 12 }, { name: "susan", wins: 16 }
 ```
-
-
 
