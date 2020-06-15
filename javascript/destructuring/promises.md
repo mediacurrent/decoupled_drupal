@@ -82,7 +82,7 @@ horseChecking
 
 ### 
 
-Async/await gives us a different syntax for dealing with promises.  The async keyword is a promise based behavior. You can see below that when we declared our promise above, we had to declare the resolve, the async return is the resolve so below we return true vs. `return Promise.resplve(true)`  so we are avoiding the need to explicitly configure promise chains.
+Async/await gives us a different syntax for dealing with promises.  The async keyword is a promise based behavior. You can see below that when we declared our promise above, we had to declare the resolve, the async return is the resolve so below we return true vs. `return Promise.resolve(true)`  so we are avoiding the need to explicitly configure promise chains.
 
 ```javascript
 async function aysnc1() {
