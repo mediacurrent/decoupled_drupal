@@ -1,13 +1,6 @@
 # Arrays
 
-Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time. Arrays use integers as keys not strings :
-
-```javascript
-let horse = [
-  'string identifier': 'nope',
-  1 : 'yes'
-]  
-```
+Arrays are objects whose prototypes have methods to perform array relevant operations. The length of an array can change at any time.
 
 ### Operator examples:
 
@@ -43,7 +36,7 @@ console.log(raceTypes); // 'flat', 'jump', 'harness', 'saddle trot', 'endurance'
 raceTypes.indexOf('jump'); // 1
 
 //Remove a specific index.
-raceType.splice( pos, 1); // 'flat', 'harness', 'saddle trot', 'endurance'
+raceTypes.splice(1,1); // 'flat', 'harness', 'saddle trot', 'endurance'
 
 //copy an array
 let newRaceTypes = raceTypes.slice();
