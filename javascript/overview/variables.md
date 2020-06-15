@@ -1,6 +1,6 @@
 # Variables
 
-A variable is a named container for reusable data. Before es6 we would declare a variable by use the keyword `var`. With e6 we also have two new keywords `let` and `const`. 
+A variable is a named container for reusable data. Before es6 we would declare a variable by use the keyword `var`. With es6 we also have two new keywords: `let` and `const`. 
 
 ```javascript
 var horseName = 'Little Sebastian';
@@ -111,7 +111,7 @@ const horseName = 'chucky';
 horseName = 'cedric'; //Uncaught SyntaxError: Identifier 'horseName' has already been declared 
 ```
 
-Sometimes you will see that const is referred to as immutable which isn't always the case. When an object is defined with const, its properties can be updated or mutated, which is an important distinction.
+Sometimes you will see that `const` is referred to as immutable which isn't always the case. When an object is defined with const, its properties can be updated or mutated, which is an important distinction.
 
 ```javascript
 const horseStats = {
