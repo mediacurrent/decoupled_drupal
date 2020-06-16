@@ -33,5 +33,7 @@ Everything in Gatsby is built using components.  A basic directory structure of 
         └── post.js
 ```
 
-Read more about [how Gatsby works with React Components](https://www.gatsbyjs.org/docs/building-with-components/#how-does-gatsby-use-react-components).
+{% hint style="info" %}
+Learn more about [React components](https://reactjs.org/docs/components-and-props.html) and how [Gatsby works with React components.](https://www.gatsbyjs.org/docs/building-with-components/#how-does-gatsby-use-react-components)
+{% endhint %}
 
