@@ -79,6 +79,7 @@ horseChecking
     console.log('An error occured');
   });
 ```
+
 Because these are based on one promise, the chain will immediately cascade once the initial promise resolves. If we wanted each `then` to be dependent on another asynchronous call, we would need to create a new promise each time. Modifying our code above would look like:
 
 ```javascript
@@ -131,3 +132,4 @@ async function checkHorseName(name) {
 
 checkHorseName(horseName);
 ```
+
