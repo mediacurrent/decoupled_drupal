@@ -62,7 +62,7 @@ let horseChecking = new Promise(function(resolve, reject) {
     } else {
       reject();
     }
-  }, 3000);
+  }, 2000);
 });
 
 horseChecking
@@ -79,38 +79,55 @@ horseChecking
     console.log('An error occured');
   });
 ```
-
-Async/await gives us a different syntax for dealing with promises. The async keyword is a promise based behavior. You can see below that when we declared our promise above, we had to declare the resolve, the async return is the resolve so below we return true vs. `return Promise.resolve(true)` so we are avoiding the need to explicitly configure promise chains.
+Because these are based on one promise, the chain will immediately cascade once the initial promise resolves. If we wanted each `then` to be dependent on another asynchronous call, we would need to create a new promise each time. Modifying our code above would look like:
 
 ```javascript
-async function aysnc1() {
-  setTimeout(function(){ 
-    //return Promise.resolve(true);
-    return true;
-  }, 3000);
-
-}
-
-aysnc1().then(console.log('done!')); // done
+horseChecking
+  .then(function () { 
+    console.log('They Matched!');
+   })
+  .then(function () { 
+    return new Promise(function(resolve, reject) {
+     setTimeout(function(){ 
+       resolve();
+       console.log('They Still Matched!');
+    }, 2000);
+    })
+   })
+  .then(function () { 
+    return new Promise(function(resolve, reject) {
+     setTimeout(function(){ 
+       resolve();
+       console.log('They Stilllllllll Matched!');
+    }, 2000);
+    })
+   })
+  .catch(function () {
+    console.log('An error occured');
+  });
 ```
 
-The wait keyword makes JavaScript wait until that promise settles and returns its result.
+Async/await provides the same functionality as promises but with a different syntax that is generally considered cleaner. To make a function asynchronous, add the `async` keyword before it. The `await` keyword makes JavaScript wait until the promise settles and returns its result. It can only be used inside an `async` function.
 
 ```javascript
-// wait ms milliseconds
-function wait(ms) {
-  return new Promise(r => setTimeout(r, ms));
+const horseName = 'Juanita';
+
+function getHorseData() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('Juanita');
+    }, 2000);
+  });
 }
 
-async function hello( time, message) {
-  try {
-      await wait(time);
-      console.log(message);
-    } catch(err) {
-      alert(err); // TypeError: failed to fetch
+async function checkHorseName(name) {
+  const nameOnPassport = await getHorseData();
+  if (name  === nameOnPassport) {
+    console.log('They Matched!');
+  } else {
+    console.log('An error occured');
   }
 }
 
-hello(500, 'one');
+checkHorseName(horseName);
 ```
-
