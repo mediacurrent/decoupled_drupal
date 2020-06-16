@@ -34,7 +34,7 @@
   * [Components structure](gatsby/build-first-site/project-structure.md)
 * [Components](gatsby/components/README.md)
   * [Layout components](gatsby/components/layout-components.md)
-  * [Working with CSS/Sass\)](gatsby/components/css-sass.md)
+  * [CSS Modules](gatsby/components/css-sass.md)
   * [Responsive images](gatsby/components/responsive-images.md)
 * [Data sources](gatsby/data-sources/README.md)
   * [Connecting a data source](gatsby/data-sources/connecting-a-data-source.md)
