@@ -107,7 +107,7 @@ horseChecking
   });
 ```
 
-Async/await provides the same functionality as promises but with a different syntax that is generally considered cleaner. To make a function asynchronous, add the `async` keyword before it. The `await` keyword makes JavaScript wait until the promise settles and returns its result. It can only be used inside an `async` function.
+Async/await provides the same functionality as promises but with a different syntax that is generally considered cleaner. To make a function asynchronous, add the `async` keyword before it. The `await` keyword makes JavaScript wait until the promise settles and returns its result. This enables us to make variables and other items dependent on asynchronous data. The `await` keyword can only be used inside an `async` function.
 
 ```javascript
 const horseName = 'Juanita';
