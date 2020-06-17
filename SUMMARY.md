@@ -23,7 +23,7 @@
 
 ## Gatsby
 
-* [Intro](gatsby/README.md)
+* [Intro](gatsby/intro/README.md)
 * [Fundamentals](gatsby/fundamentals/README.md)
   * [What is React?](gatsby/fundamentals/react.md)
   * [What is JSX](gatsby/fundamentals/jsx.md)
