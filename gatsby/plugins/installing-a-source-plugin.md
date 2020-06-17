@@ -1,4 +1,4 @@
-# Installing and configuring a source plugin
+# Installing and configuring a plugin
 
 Installing Gatsby plugins is as simple as installing any other NPM package.  Let's take the example of the **gatsby-sitemap** plugin to create a sitemap for your gatsy site:
 
@@ -28,4 +28,3 @@ Most plugins allow you to do additional customization and configuration as is th
 {% hint style="info" %}
 Brow all the [Gatsby plugins](https://www.gatsbyjs.org/plugins/).
 {% endhint %}
-

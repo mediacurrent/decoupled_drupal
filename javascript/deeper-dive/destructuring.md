@@ -1,6 +1,4 @@
-# Deeper Dive
-
-## Destructuring
+# Destructuring
 
 ### Arrays
 
@@ -9,4 +7,3 @@
 ### Default Values
 
 ### Reassigning Names
-
