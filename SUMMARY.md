@@ -47,7 +47,6 @@
   * [Gatsby Link](gatsby/create-page/gatsby-link.md)
 * [Plugins](gatsby/extending-gatsby-with-plugins/README.md)
   * [Installing and configuring a source plugin](gatsby/extending-gatsby-with-plugins/installing-a-source-plugin.md)
-  * [Adding scripts using gatsby-ssr](gatsby/extending-gatsby-with-plugins/adding-scripts-gatsby-ssr.md)
   * [Advanced getting runtime data from APIs \(useEffect or useQuery\)](gatsby/extending-gatsby-with-plugins/advanced-data-from-apis.md)
 * [Gatsby cloud](gatsby/gatsby-cloud.md)
 * [Resources](gatsby/resources.md)
