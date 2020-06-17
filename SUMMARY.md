@@ -50,4 +50,4 @@
   * [Installing and configuring a plugin](gatsby/plugins/installing-a-source-plugin.md)
   * [Getting runtime data from APIs \(useEffect or useQuery\)](gatsby/plugins/static-queries.md)
 * [Gatsby cloud](gatsby/gatsby-cloud.md)
-* [Resources](gatsby/resources.md)
+* [Resources](gatsby/resources/README.md)
