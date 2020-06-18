@@ -1,4 +1,4 @@
-# Creating page
+# Create page
 
 Creating pages in Gatsby can be done in three ways:
 

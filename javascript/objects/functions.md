@@ -80,7 +80,7 @@ If we want to return a value, we would declare it like this:
 
 
 ```javascript
-function withReturns(){ 
+function withReturns() { 
   return true;
 }; // return defined as 'true' 
 
