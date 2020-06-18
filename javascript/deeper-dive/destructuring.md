@@ -54,6 +54,29 @@ console.log(didNotGetPoints); //["Hans", "John"]
 
 ## Default Values
 
+If we try to operate on absent values they are undefined, if we need to ensure that there is a value we can add defaults.
+
+```javascript
+// Our array will remain unmodified
+let raceFinishers = ['Gary', 'Lenny', 'Karl']
+
+let [firstPlace, secondPlace ,thirdPlace, fourthPlace] = raceFinishers;
+
+console.log(fourthPlace); //Undefined
+
+```
+
+We could rewrite the above like so:
+
+```javascript
+// Our array will remain unmodified
+let raceFinishers = ['Gary', 'Lenny', 'Karl']
+
+let [firstPlace = 'A. Winner', secondPlace = 'A. FirstLoser' ,thirdPlace = 'A. ThirdPlace', fourthPlace = 'A. FourthPlace'] = raceFinishers;
+
+console.log(fourthPlace); //A.FourthPlace
+```
+
 ## Reassigning Names
 
 We can reassign the values of variables easily using destructuring
