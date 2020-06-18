@@ -32,7 +32,7 @@ console.log(riderWinner); // Harmless Harry
 
 As demonstrated above we can also use methods that return arrays such as split. It is important to note that the original array is not modified.
 
-We can also act on parts of the data:
+We can also act on parts of the data, so if we only wanted to get the first and third place finishers :
 
 ```javascript
 // Our array will remain unmodified
