@@ -52,12 +52,44 @@ console.log(didNotGetPoints); //["Hans", "John"]
 
 
 
+## Objects
+
+We can also destructure objects:
+
+```javascript
+let gerryStats = {
+  name: 'Fast Gerry',
+  height: '16 hands',
+  color: 'Piebald'
+}
+
+// Note that the order doesn't matter due to the property names
+let { name, color, height } = gerryStats;
+
+console.log(height); //16 hands
+```
+
+If we want to rename the variable something other than the property name we can  do it using a colon.
+
+```javascript
+let gerryStats = {
+  name: 'Fast Gerry',
+  height: '16 hands',
+  color: 'Piebald'
+}
+
+// Note that the order doesn't matter due to the property names
+let { name : horseName, color : horseColor, height: horseHeight } = gerryStats;
+
+console.log(horseHeight); //16 hands
+```
+
 ## Default Values
 
 If we try to operate on absent values they are undefined, if we need to ensure that there is a value we can add defaults.
 
 ```javascript
-// Our array will remain unmodified
+// A shorter array
 let raceFinishers = ['Gary', 'Lenny', 'Karl']
 
 let [firstPlace, secondPlace ,thirdPlace, fourthPlace] = raceFinishers;
@@ -69,12 +101,25 @@ console.log(fourthPlace); //Undefined
 We could rewrite the above like so:
 
 ```javascript
-// Our array will remain unmodified
+// A shorter array
 let raceFinishers = ['Gary', 'Lenny', 'Karl']
 
 let [firstPlace = 'A. Winner', secondPlace = 'A. FirstLoser' ,thirdPlace = 'A. ThirdPlace', fourthPlace = 'A. FourthPlace'] = raceFinishers;
 
 console.log(fourthPlace); //A.FourthPlace
+```
+
+For objects, we can combine the colon syntax with defaults:
+
+```javascript
+let gerryStats = {
+  name: 'Fast Gerry'
+}
+
+// Note that the order doesn't matter due to the property names
+let { name : horseName = 'frank', color : horseColor = 'black', height: horseHeight = '13 hands' } = gerryStats;
+
+console.log(horseHeight); //13 hands
 ```
 
 ## Reassigning Names
