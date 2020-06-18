@@ -78,7 +78,7 @@ let gerryStats = {
   color: 'Piebald'
 }
 
-// Note that the order doesn't matter due to the property names
+// Adding the new variable names
 let { name : horseName, color : horseColor, height: horseHeight } = gerryStats;
 
 console.log(horseHeight); //16 hands
