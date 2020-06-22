@@ -11,6 +11,7 @@
   * [Booleans](javascript/overview/booleans.md)
   * [Prototypes / Inheritance](javascript/overview/prototypes-inheritance.md)
 * [Fundamentals](javascript/objects/README.md)
+  * [Objects](javascript/objects/objects.md)
   * [Functions](javascript/objects/functions.md)
   * [Arrays](javascript/objects/arrays.md)
   * [Classes](javascript/objects/classes.md)
